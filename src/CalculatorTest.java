@@ -48,5 +48,10 @@ public class CalculatorTest {
         assertTrue(exceptionHappens);
     }
 
+    @Test
+	public void testOver1000Lines() {
+		assertEquals(2, Calculator.add("1001,2"));
+	}
+
 
 }
