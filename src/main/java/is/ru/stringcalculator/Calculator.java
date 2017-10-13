@@ -8,12 +8,9 @@ public class Calculator {
 		}
 		else {
 			if(text.contains(",")) {
-				//String numbers[] = text.split(",");
-				//String numbers[] = text.split(",|/n");
 				String numbers[] = multipleDelimiters(text);
 				negativeNumbers(numbers);
 				return sum(numbers);
-				//return toInt(numbers[0]) + toInt(numbers[1]);
 			}
 
 			return 1;
